@@ -36,11 +36,11 @@ mientras que los sistemas no lineales no cumplen con estos principios y pueden i
 Se trata de una herramienta que convierte ecuaciones diferenciales en ecuaciones algebraicas en el dominio de la frecuencia (s) esto para facilitar su analisis y solucion de distintos sistemas.
 Algunas de sus principales propiedades son:
 ### Linealidad:
-$$\L (af(t)+bg(t))=aF(s)+bG(s)$$
+$$L (af(t)+bg(t))=aF(s)+bG(s)$$
 ### Trasnformada de la derivada:
-$$\L (f'(t))=sF(s)-F(0)$$
-$$\L (f''(t))=s^{2}F(s)-sF(0)-F'(0)$$
+$$L (f'(t))=sF(s)-F(0)$$
+$$L (f''(t))=s^{2}F(s)-sF(0)-F'(0)$$
 ###Transformada de la integral:
-$$\L (\int_{0}^{t}f(\tau )d\tau )=\frac{F(s)}{s}$$
+$$L (\int_{0}^{t}f(\tau )d\tau )=\frac{F(s)}{s}$$
 ###Teorema del valor final
 $$\displaystyle \lim_{t \to \infty }f(t)=\displaystyle \lim_{s \to 0}sF(s)$$
