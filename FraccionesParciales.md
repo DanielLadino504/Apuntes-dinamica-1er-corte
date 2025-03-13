@@ -16,3 +16,6 @@ $$\frac{P(x)}{(x-a)^{n}}=\frac{A_{1}}{x-a}+\frac{A_{2}}{(x-a)^{2}}+\cdot \cdot \
 ## Factores cuadraticos irreducibles:
 
 $$\frac{P(x)}{(x^{2}+bx+c)}=\frac{Ax+B}{(x^{2}+bx+c)}$$
+
+
+\[ F(s) = \frac{a_1}{s + p_1} + \frac{a_2}{s + p_2} + \cdots + \frac{a_n}{s + p_n} \]
