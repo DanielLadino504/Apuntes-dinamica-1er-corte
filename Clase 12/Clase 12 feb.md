@@ -98,3 +98,36 @@ $$L^{-1}[Y(s)]=2e^{t}-e^{2t}$$
 
 2. Hallar la transformada de la ecuacion:
 
+$$y'+y=3,y(0)=2$$
+
+## solucion
+
+$$L[y'(t)]=sY(s)-y(0)$$
+
+$$L[y']+L[y]=L[3]$$
+
+$$\frac{3}{s}=(sY(s)-2)+Y(s)$$
+
+$$\frac{3}{s}+2=(s+1)Y(s)$$
+
+$$\frac{3+2s}{s}=(s+1)Y(s)$$
+
+$$\frac{3+2s}{s(s+1)}=Y(s)$$
+
+$$\frac{3+2s}{s(s+1)}=\frac{A}{s}+\frac{B}{s+1}$$
+
+$$3+2s=A(s+1)+Bs$$
+
+$$si s=0$$
+
+$$3=A$$
+
+$$si s=-1$$
+
+$$3-2=B$$
+
+$$B=-1$$
+
+$$\frac{3+2s}{s(s+1)}=\frac{3}{s}-\frac{1}{s+1}$$
+
+$$\frac{3}{s}-\frac{1}{s+1}\to 3-e^{-t}$$
