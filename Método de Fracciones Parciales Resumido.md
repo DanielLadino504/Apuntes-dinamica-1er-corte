@@ -15,15 +15,42 @@ donde $$\( A(s) \) y \( B(s) \)$$ son polinomios en el dominio de la frecuencia 
 
 1. **Raíces reales diferentes**: $$Si \( B(s) \)$$ tiene raíces reales y distintas, la descomposición en fracciones parciales se tiene que hacer de la siguiente forma:
 
-   $$\[ F(s) = \frac{a_1}{s + p_1} + \frac{a_2}{s + p_2} + \cdots + \frac{a_n}{s + p_n} \]$$
+   $$\[ F(s) = \frac{a_1}{s + p_1} + \frac{b_2}{s + p_2} + \cdots + \frac{b_n}{s + p_n} \]$$
+
+    **Hallamos los valores de $$\(b_1 \) y \(b_2 \)$$**:
+
+   - Para encontrar $$\(b_1 \)$$, multiplicas ambos lados de la ecuación por $$\( (s + p_1) \)$$ y luego sustituimos $$\( s = -p_1 \)$$. Esto hace que todos los términos excepto $$\(b_1 \)$$ se cancelen:
+     $$b_1 = \left[ (s + p_1) \cdot F(s) \right]_{s = -p_1}$$
+
+   - Hacemos lo mismo para $$\(b_2 \)$$: multiplicas por $$\( (s + p_2) \)$$ y $$\( s = -p_2 \)$$: $$b_2 = \left[ (s + p_2) \cdot F(s) \right]_{s = -p_2}$$
+     
+
+   - Después de hacer estos pasos, obtenemos los valores de $$\( b_1 \)$$ y $$\( b_2 \)$$, y obtenemos la suma de fracciones más simples:
+   $$F(s) = \frac{b_1}{s + p_1} + \frac{b_2}{s + p_2}.$$
 
 2. **Raíces reales repetidas**: Si $$\( B(s) \)$$ tiene raíces reales repetidas, la descomposición incluirá términos con potencias crecientes en el denominador:
 
    $$\[ F(s) = \frac{b_1}{s + p} + \frac{b_2}{(s + p)^2} + \cdots + \frac{b_k}{(s + p)^k} \]$$
+   
+**Hallamos los valores de $$\( b_1 \), \( b_2 \), y \( b_3 \)$$**:
 
-3. **Raíces complejas conjugadas**: Si \( B(s) \) tiene raíces complejas, la descomposición incluirá términos con funciones seno y coseno amortiguadas:
+   - **Para \( b_3 \)**:
+     Multiplicas ambos lados de la ecuación por $$\( (s + p)^3 \)$$ y luego reemplazamos $$\( s = -p \)$$. Esto elimina todos los términos excepto $$\( b_3 \)$$:
+     $$b_3 = \left[ (s + p)^3 \cdot F(s) \right]_{s = -p}$$
 
-   \[ F(s) = \frac{As + B}{(s + \alpha)^2 + \omega^2} \]
+   - **Para $$\( b_2 \)$$**:
+     Derivas la ecuación con respecto a $$\( s \)$$ y luego reemplazamos $$\( s = -p \)$$. con esto hallamos $$\( b_2 \)$$:
+     $$b_2 = \left[ \frac{d}{ds} \left( (s + p)^3 \cdot F(s) \right) \right]_{s = -p}$$
+
+   - **Para $$\( b_1 \)$$**:
+     Derivas nuevamente ambos lados de la ecuación con respecto a $$\( s \)$$ y luego reemplazamos $$\( s = -p \)$$.con esto hallamos $$\( b_1 \)$$:
+     $$b_1 = \left[ \frac{1}{2} \cdot \frac{d^2}{ds^2} \left( (s + p)^3 \cdot F(s) \right) \right]_{s = -p}$$
+   - Después de calcular $$\( b_1 \), \( b_2 \), y \( b_3 \)$$, lo reemplazamos en la fracciób original como la suma de fracciones más simples:
+   $$F(s) = \frac{b_1}{s + p} + \frac{b_2}{(s + p)^2} + \frac{b_3}{(s + p)^3}$$
+   
+3. **Raíces complejas conjugadas**: Si $$\( B(s) \)$$ tiene raíces complejas, la descomposición incluirá términos con funciones seno y coseno amortiguadas:
+
+   $$\[ F(s) = \frac{As + B}{(s + \alpha)^2 + \omega^2} \]$$
 
 ## 3. Ejemplos de Aplicación
 
