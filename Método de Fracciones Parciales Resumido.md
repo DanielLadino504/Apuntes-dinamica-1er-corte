@@ -1,25 +1,25 @@
 # Fracciones Parciales: Método Resumido
 
 ## 1. Introducción
-El método de fracciones parciales es un metodo matemática utilizado para descomponer una función normalmente dificil de operar a una suma de fracciones más simples. Este método es especialmente útil en el análisis de sistemas dinámicos y en la solución de ecuaciones diferenciales, ya que permite simplificar la transformada inversa de Laplace, facilitandonos así la obtención de soluciones en el dominio del tiempo.
+El método de fracciones parciales es un metodo matemático utilizado para descomponer una función normalmente dificil de operar a una suma de fracciones más simples. Este método es especialmente útil en el análisis de sistemas dinámicos y en la solución de ecuaciones diferenciales, ya que permite simplificar la transformada inversa de Laplace, facilitandonos así la obtención de soluciones en el dominio del tiempo.
 
 ## 2. Definición
 
 Las fracciones parciales se aplican a un tipo de funcione normalmente de la forma:
 
-\[ F(s) = \frac{A(s)}{B(s)} \]
+$$\[ F(s) = \frac{A(s)}{B(s)} \]$$
 
-donde \( A(s) \) y \( B(s) \) son polinomios en \( s \), y el grado de \( A(s) \) es menor que el grado de \( B(s) \). El objetivo es expresar \( F(s) \) como una suma de fracciones más simples, cuyos denominadores son factores de \( B(s) \).
+donde $$\( A(s) \) y \( B(s) \)$$ son polinomios en el dominio de la frecuencia $$\( s \)$$, y el grado de $$\( A(s) \)$$ es menor que el grado de $$\( B(s) \)$$. El objetivo es expresar $$\( F(s) \)$$ como una suma de fracciones más simples.
 
 ### 2.1. Casos Principales
 
-1. **Raíces reales diferentes**: Si \( B(s) \) tiene raíces reales y distintas, la descomposición en fracciones parciales será de la forma:
+1. **Raíces reales diferentes**: $$Si \( B(s) \)$$ tiene raíces reales y distintas, la descomposición en fracciones parciales se tiene que hacer de la siguiente forma:
 
-   \[ F(s) = \frac{a_1}{s + p_1} + \frac{a_2}{s + p_2} + \cdots + \frac{a_n}{s + p_n} \]
+   $$\[ F(s) = \frac{a_1}{s + p_1} + \frac{a_2}{s + p_2} + \cdots + \frac{a_n}{s + p_n} \]$$
 
-2. **Raíces reales repetidas**: Si \( B(s) \) tiene raíces reales repetidas, la descomposición incluirá términos con potencias crecientes en el denominador:
+2. **Raíces reales repetidas**: Si $$\( B(s) \)$$ tiene raíces reales repetidas, la descomposición incluirá términos con potencias crecientes en el denominador:
 
-   \[ F(s) = \frac{b_1}{s + p} + \frac{b_2}{(s + p)^2} + \cdots + \frac{b_k}{(s + p)^k} \]
+   $$\[ F(s) = \frac{b_1}{s + p} + \frac{b_2}{(s + p)^2} + \cdots + \frac{b_k}{(s + p)^k} \]$$
 
 3. **Raíces complejas conjugadas**: Si \( B(s) \) tiene raíces complejas, la descomposición incluirá términos con funciones seno y coseno amortiguadas:
 
