@@ -3,17 +3,9 @@
 ## 1. Introducción
 El método de fracciones parciales es un metodo matemático utilizado para descomponer una función normalmente dificil de operar a una suma de fracciones más simples. Este método es especialmente útil en el análisis de sistemas dinámicos y en la solución de ecuaciones diferenciales, ya que permite simplificar la transformada inversa de Laplace, facilitandonos así la obtención de soluciones en el dominio del tiempo.
 
-## 2. Definición
+## 2. Casos Principales
 
-Las fracciones parciales se aplican a un tipo de funcione normalmente de la forma:
-
-$$\[ F(s) = \frac{A(s)}{B(s)} \]$$
-
-donde $$\( A(s) \) y \( B(s) \)$$ son polinomios en el dominio de la frecuencia $$\( s \)$$, y el grado de $$\( A(s) \)$$ es menor que el grado de $$\( B(s) \)$$. El objetivo es expresar $$\( F(s) \)$$ como una suma de fracciones más simples.
-
-### 2.1. Casos Principales
-
-2.1.1. **Raíces reales diferentes**: $$Si \( B(s) \)$$ tiene raíces reales y distintas, la descomposición en fracciones parciales se tiene que hacer de la siguiente forma:
+###2.1. **Raíces reales diferentes**: $$Si \( B(s) \)$$ tiene raíces reales y distintas, la descomposición en fracciones parciales se tiene que hacer de la siguiente forma:
 
    $$\[ F(s) = \frac{a_1}{s + p_1} + \frac{b_2}{s + p_2} + \cdots + \frac{b_n}{s + p_n} \]$$
 
@@ -28,7 +20,7 @@ donde $$\( A(s) \) y \( B(s) \)$$ son polinomios en el dominio de la frecuencia 
    - Después de hacer estos pasos, obtenemos los valores de $$\( b_1 \)$$ y $$\( b_2 \)$$, y obtenemos la suma de fracciones más simples:
    $$F(s) = \frac{b_1}{s + p_1} + \frac{b_2}{s + p_2}.$$
 
-2.1.2. **Raíces reales repetidas**: Si $$\( B(s) \)$$ tiene raíces reales repetidas, la descomposición incluirá términos con potencias crecientes en el denominador:
+###2.2. **Raíces reales repetidas**: Si $$\( B(s) \)$$ tiene raíces reales repetidas, la descomposición incluirá términos con potencias crecientes en el denominador:
 
    $$\[ F(s) = \frac{b_1}{s + p} + \frac{b_2}{(s + p)^2} + \cdots + \frac{b_k}{(s + p)^k} \]$$
    
@@ -48,7 +40,7 @@ donde $$\( A(s) \) y \( B(s) \)$$ son polinomios en el dominio de la frecuencia 
    - Después de calcular $$\( b_1 \), \( b_2 \), y \( b_3 \)$$, lo reemplazamos en la fracciób original como la suma de fracciones más simples:
    $$F(s) = \frac{b_1}{s + p} + \frac{b_2}{(s + p)^2} + \frac{b_3}{(s + p)^3}$$
    
-2.1.3. **Raíces complejas conjugadas**: Si $$\( B(s) \)$$ tiene raíces complejas, la descomposición incluirá términos con funciones seno y coseno amortiguadas:
+###2.3. **Raíces complejas conjugadas**: Si $$\( B(s) \)$$ tiene raíces complejas, la descomposición incluirá términos con funciones seno y coseno amortiguadas:
 
    $$\[ F(s) = \frac{As + B}{(s + \alpha)^2 + \omega^2} \]$$
 
@@ -129,12 +121,9 @@ descomponer \( F(s) \) en fracciones parciales
 ### Solución
 
 - **Descomposición en fracciones parciales**:
-
-   Como el denominador tiene una raíz repetida  $$\( s = -2 \) $$, la descomposición en fracciones parciales:
-
    $$F(s) = \frac{b_1}{s + 2} + \frac{b_2}{(s + 2)^2} + \frac{b_3}{(s + 2)^3}$$
 
-- **Encontramos \( b_3 \)**:
+- **$$\( b_3 \)$$**:
 
    Multiplicamos ambos lados por  $$\( (s + 2)^3 \) $$ y evaluamos en  $$\( s = -2 \)$$:
 
@@ -142,33 +131,30 @@ descomponer \( F(s) \) en fracciones parciales
    
    $$b_3 = \left[ s^2 + 4s + 5 \right]_{s = -2} = (-2)^2 + 4(-2) + 5 = 4 - 8 + 5 = 1$$
 
-- **Encontrar  $$\( b_2 \) $$**:
+- **$$\( b_2 \)$$**:
 
-   Derivamos ambos lados con respecto a  $$\( s \) $$ y evaluamos en  $$\( s = -2 \)$$:
+   Derivamos respecto a  $$\( s \) $$ y evaluamos en  $$\( s = -2 \)$$:
 
    $$\frac{d}{ds} \left[ (s + 2)^3 \cdot \frac{s^2 + 4s + 5}{(s + 2)^3} \right] = b_2 + 2b_1(s + 2)$$
 
-   Evaluando en  $$\( s = -2 \) $$:
+   Evaluando  $$\( s = -2 \) $$:
 
    $$\left[ \frac{d}{ds} (s^2 + 4s + 5) \right]_{s = -2} = b_2$$
 
-   Calculamos la derivada:
-
    $$\frac{d}{ds} (s^2 + 4s + 5) = 2s + 4.$$
 
-   Evaluando en  $$\( s = -2 \) $$:
+   Evaluando  $$\( s = -2 \) $$:
 
    $$2(-2) + 4 = -4 + 4 = 0$$
+   $$\( b_2 = 0 \) $$.
 
-   Por lo tanto,  $$\( b_2 = 0 \) $$.
+- **$$\( b_1 \) $$**:
 
-- **Encontrar  $$\( b_1 \) $$**:
-
-   Derivamos nuevamente ambos lados con respecto a  $$\( s \) $$ y evaluamos en  $$\( s = -2 \) $$:
+   Derivamos respecto a  $$\( s \) $$ y evaluamos $$\( s = -2 \) $$:
 
    $$\frac{d^2}{ds^2} \left[ (s + 2)^3 \cdot \frac{s^2 + 4s + 5}{(s + 2)^3} \right] = 2b_1$$
 
-   Evaluando en  $$\( s = -2 \) $$:
+   Evaluando $$\( s = -2 \) $$:
 
    $$\left[ \frac{d^2}{ds^2} (s^2 + 4s + 5) \right]_{s = -2} = 2b_1$$
 
@@ -176,7 +162,6 @@ descomponer \( F(s) \) en fracciones parciales
 
    $$\frac{d^2}{ds^2} (s^2 + 4s + 5) = 2$$
 
-   Por lo tanto:
 
    $$2 = 2b_1 \implies b_1 = 1$$
 
@@ -186,6 +171,36 @@ descomponer \( F(s) \) en fracciones parciales
 
    $$F(s) = \frac{1}{s + 2} + \frac{0}{(s + 2)^2} + \frac{1}{(s + 2)^3}$$
 
+### 3.2 Función:
+
+$$F(s) = \frac{2s + 5}{(s + 1)(s + 3)},$$
+
+### Solución 
+
+- **Descomposición en fracciones parciales**:
+
+   $$F(s) = \frac{a_1}{s + 1} + \frac{a_2}{s + 3}$$
+
+- **$$\( a_1 \)$$**:
+
+   Multiplicamos ambos lados por $$\( (s + 1) \)$$ y evaluamos en $$\( s = -1 \)$$:
+
+   $$a_1 = \left[ (s + 1) \cdot \frac{2s + 5}{(s + 1)(s + 3)} \right]_{s = -1}$$
+   
+   $$a_1 = \left[ \frac{2s + 5}{s + 3} \right]_{s = -1} = \frac{2(-1) + 5}{(-1) + 3} = \frac{-2 + 5}{2} = \frac{3}{2}$$
+
+- **$$\( a_2 \)$$**:
+
+   Multiplicamos ambos lados por $$\( (s + 3) \)$$ y evaluamos $$\( s = -3 \)$$:
+
+   $$a_2 = \left[ (s + 3) \cdot \frac{2s + 5}{(s + 1)(s + 3)} \right]_{s = -3}$$
 
 
+   $$a_2 = \left[ \frac{2s + 5}{s + 1} \right]_{s = -3} = \frac{2(-3) + 5}{(-3) + 1} = \frac{-6 + 5}{-2} = \frac{-1}{-2} = \frac{1}{2}$$
+
+5. **Descomposición final**:
+
+   Sustituyendo los valores de $$\( a_1 \)$$ y $$\( a_2 \)$$:
+
+   $$F(s) = \frac{3/2}{s + 1} + \frac{1/2}{s + 3}$$
 
