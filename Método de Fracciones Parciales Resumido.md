@@ -5,11 +5,12 @@ El método de fracciones parciales es un metodo matemático utilizado para desco
 
 ## 2. Casos Principales
 
-###2.1. **Raíces reales diferentes**: $$Si \( B(s) \)$$ tiene raíces reales y distintas, la descomposición en fracciones parciales se tiene que hacer de la siguiente forma:
+### 2.1. **Raíces reales diferentes**
+$$Si \( B(s) \)$$ tiene raíces reales y distintas, la descomposición en fracciones parciales se tiene que hacer de la siguiente forma:
 
    $$\[ F(s) = \frac{a_1}{s + p_1} + \frac{b_2}{s + p_2} + \cdots + \frac{b_n}{s + p_n} \]$$
 
-    **Hallamos los valores de $$\(b_1 \) y \(b_2 \)$$**:
+**Hallamos los valores de $$\(b_1 \) y \(b_2 \)$$**:
 
    - Para encontrar $$\(b_1 \)$$, multiplicas ambos lados de la ecuación por $$\( (s + p_1) \)$$ y luego sustituimos $$\( s = -p_1 \)$$. Esto hace que todos los términos excepto $$\(b_1 \)$$ se cancelen:
      $$b_1 = \left[ (s + p_1) \cdot F(s) \right]_{s = -p_1}$$
@@ -20,7 +21,9 @@ El método de fracciones parciales es un metodo matemático utilizado para desco
    - Después de hacer estos pasos, obtenemos los valores de $$\( b_1 \)$$ y $$\( b_2 \)$$, y obtenemos la suma de fracciones más simples:
    $$F(s) = \frac{b_1}{s + p_1} + \frac{b_2}{s + p_2}.$$
 
-###2.2. **Raíces reales repetidas**: Si $$\( B(s) \)$$ tiene raíces reales repetidas, la descomposición incluirá términos con potencias crecientes en el denominador:
+### 2.2. **Raíces reales repetidas**: 
+
+Si $$\( B(s) \)$$ tiene raíces reales repetidas, la descomposición incluirá términos con potencias crecientes en el denominador:
 
    $$\[ F(s) = \frac{b_1}{s + p} + \frac{b_2}{(s + p)^2} + \cdots + \frac{b_k}{(s + p)^k} \]$$
    
@@ -40,7 +43,9 @@ El método de fracciones parciales es un metodo matemático utilizado para desco
    - Después de calcular $$\( b_1 \), \( b_2 \), y \( b_3 \)$$, lo reemplazamos en la fracciób original como la suma de fracciones más simples:
    $$F(s) = \frac{b_1}{s + p} + \frac{b_2}{(s + p)^2} + \frac{b_3}{(s + p)^3}$$
    
-###2.3. **Raíces complejas conjugadas**: Si $$\( B(s) \)$$ tiene raíces complejas, la descomposición incluirá términos con funciones seno y coseno amortiguadas:
+### 2.3. **Raíces complejas conjugadas**
+
+Si $$\( B(s) \)$$ tiene raíces complejas, la descomposición incluirá términos con funciones seno y coseno :
 
    $$\[ F(s) = \frac{As + B}{(s + \alpha)^2 + \omega^2} \]$$
 
