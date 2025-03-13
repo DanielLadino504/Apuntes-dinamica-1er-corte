@@ -118,4 +118,74 @@ $$\[ F(s) = \frac{10 + 2(s + 1)}{(s + 1)^2 + 2^2} = 5 \frac{2}{(s + 1)^2 + 2^2} 
 
 ## 3. Ejercicios
 
-### 3.1
+### 3.1 Función:
+
+$$F(s) = \frac{s^2 + 4s + 5}{(s + 2)^3},$$
+
+descomponer \( F(s) \) en fracciones parciales 
+
+---
+
+### Solución
+
+- **Descomposición en fracciones parciales**:
+
+   Como el denominador tiene una raíz repetida  $$\( s = -2 \) $$, la descomposición en fracciones parciales:
+
+   $$F(s) = \frac{b_1}{s + 2} + \frac{b_2}{(s + 2)^2} + \frac{b_3}{(s + 2)^3}$$
+
+- **Encontramos \( b_3 \)**:
+
+   Multiplicamos ambos lados por  $$\( (s + 2)^3 \) $$ y evaluamos en  $$\( s = -2 \)$$:
+
+   $$b_3 = \left[ (s + 2)^3 \cdot \frac{s^2 + 4s + 5}{(s + 2)^3} \right]_{s = -2}$$
+   
+   $$b_3 = \left[ s^2 + 4s + 5 \right]_{s = -2} = (-2)^2 + 4(-2) + 5 = 4 - 8 + 5 = 1$$
+
+   -**Encontrar  $$\( b_2 \) $$**:
+
+   Derivamos ambos lados con respecto a  $$\( s \) $$ y evaluamos en  $$\( s = -2 \)$$:
+
+   $$\frac{d}{ds} \left[ (s + 2)^3 \cdot \frac{s^2 + 4s + 5}{(s + 2)^3} \right] = b_2 + 2b_1(s + 2)$$
+
+   Evaluando en  $$\( s = -2 \) $$:
+
+   $$\left[ \frac{d}{ds} (s^2 + 4s + 5) \right]_{s = -2} = b_2$$
+
+   Calculamos la derivada:
+
+   $$\frac{d}{ds} (s^2 + 4s + 5) = 2s + 4.$$
+
+   Evaluando en  $$\( s = -2 \) $$:
+
+   $$2(-2) + 4 = -4 + 4 = 0$$
+
+   Por lo tanto,  $$\( b_2 = 0 \) $$.
+
+- **Encontrar  $$\( b_1 \) $$**:
+
+   Derivamos nuevamente ambos lados con respecto a  $$\( s \) $$ y evaluamos en  $$\( s = -2 \) $$:
+
+   $$\frac{d^2}{ds^2} \left[ (s + 2)^3 \cdot \frac{s^2 + 4s + 5}{(s + 2)^3} \right] = 2b_1$$
+
+   Evaluando en  $$\( s = -2 \) $$:
+
+   $$\left[ \frac{d^2}{ds^2} (s^2 + 4s + 5) \right]_{s = -2} = 2b_1$$
+
+   Calculamos la segunda derivada:
+
+   $$\frac{d^2}{ds^2} (s^2 + 4s + 5) = 2$$
+
+   Por lo tanto:
+
+   $$2 = 2b_1 \implies b_1 = 1$$
+
+- **Descomposición final**:
+
+   Sustituimos los valores de  $$\( b_1 \), \( b_2 \), y \( b_3 \) $$:
+
+   $$F(s) = \frac{1}{s + 2} + \frac{0}{(s + 2)^2} + \frac{1}{(s + 2)^3}$$
+
+
+
+
