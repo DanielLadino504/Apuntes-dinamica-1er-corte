@@ -58,11 +58,11 @@ donde $$\( A(s) \) y \( B(s) \)$$ son polinomios en el dominio de la frecuencia 
 
 **Ejemplo 1:**
 
-Dada la función:
+Función:
 
 $$\[ F(s) = \frac{s + 3}{(s + 1)(s + 2)} \]$$
 
-La descomposición en fracciones parciales será:
+Descomposición en fracciones parciales:
 
 $$\[ F(s) = \frac{a_1}{s + 1} + \frac{a_2}{s + 2} \]$$
 
@@ -80,11 +80,11 @@ $$\[ F(s) = \frac{2}{s + 1} - \frac{1}{s + 2} \]$$
 
 **Ejemplo 2:**
 
-Dada la función:
+Función:
 
 $$\[ F(s) = \frac{s^2 + 2s + 3}{(s + 1)^3} \]$$
 
-La descomposición en fracciones parciales será:
+La descomposición en fracciones parciales:
 
 $$\[ F(s) = \frac{b_1}{s + 1} + \frac{b_2}{(s + 1)^2} + \frac{b_3}{(s + 1)^3} \]$$
 
@@ -96,7 +96,7 @@ $$\[ b_2 = \left[ \frac{d}{ds} \left( (s + 1)^3 \frac{s^2 + 2s + 3}{(s + 1)^3} \
 
 $$\[ b_1 = \left[ \frac{1}{2} \frac{d^2}{ds^2} \left( (s + 1)^3 \frac{s^2 + 2s + 3}{(s + 1)^3} \right) \right]_{s = -1} = 1 \]$$
 
-Por lo tanto, la descomposición es:
+La descomposición es:
 
 $$\[ F(s) = \frac{1}{s + 1} + \frac{0}{(s + 1)^2} + \frac{2}{(s + 1)^3} \]$$
 
