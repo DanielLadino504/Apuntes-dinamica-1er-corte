@@ -1,4 +1,5 @@
 # Descompocision en fracciones parciales
+Daniel Felipe Ladino, Angel David Melo, Valentina Riveros
 ## Que es?
 Las fracciones parciales son un método de integración que se utiliza para descomponer una fracción algebraica compleja en una suma de fracciones más simples.
 Este proceso permite:
