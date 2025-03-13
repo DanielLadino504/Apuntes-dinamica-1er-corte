@@ -60,21 +60,21 @@ donde $$\( A(s) \) y \( B(s) \)$$ son polinomios en el dominio de la frecuencia 
 
 Dada la función:
 
-\[ F(s) = \frac{s + 3}{(s + 1)(s + 2)} \]
+$$\[ F(s) = \frac{s + 3}{(s + 1)(s + 2)} \]$$
 
 La descomposición en fracciones parciales será:
 
-\[ F(s) = \frac{a_1}{s + 1} + \frac{a_2}{s + 2} \]
+$$\[ F(s) = \frac{a_1}{s + 1} + \frac{a_2}{s + 2} \]$$
 
-Para encontrar \( a_1 \) y \( a_2 \), multiplicamos ambos lados por \( (s + 1)(s + 2) \) y evaluamos en \( s = -1 \) y \( s = -2 \):
+Para encontrar $$\( a_1 \) y \( a_2 \)$$, multiplicamos ambos lados por $$\( (s + 1)(s + 2) \)$$ y evaluamos en $$\( s = -1 \) y \( s = -2 \)$$:
 
-\[ a_1 = \left[ (s + 1) \frac{s + 3}{(s + 1)(s + 2)} \right]_{s = -1} = 2 \]
+$$\[ a_1 = \left[ (s + 1) \frac{s + 3}{(s + 1)(s + 2)} \right]_{s = -1} = 2 \]$$
 
-\[ a_2 = \left[ (s + 2) \frac{s + 3}{(s + 1)(s + 2)} \right]_{s = -2} = -1 \]
+$$\[ a_2 = \left[ (s + 2) \frac{s + 3}{(s + 1)(s + 2)} \right]_{s = -2} = -1 \]$$
 
 Por lo tanto, la descomposición es:
 
-\[ F(s) = \frac{2}{s + 1} - \frac{1}{s + 2} \]
+$$\[ F(s) = \frac{2}{s + 1} - \frac{1}{s + 2} \]$$
 
 ### 3.2. Caso 2: Raíces Reales Repetidas
 
@@ -82,23 +82,23 @@ Por lo tanto, la descomposición es:
 
 Dada la función:
 
-\[ F(s) = \frac{s^2 + 2s + 3}{(s + 1)^3} \]
+$$\[ F(s) = \frac{s^2 + 2s + 3}{(s + 1)^3} \]$$
 
 La descomposición en fracciones parciales será:
 
-\[ F(s) = \frac{b_1}{s + 1} + \frac{b_2}{(s + 1)^2} + \frac{b_3}{(s + 1)^3} \]
+$$\[ F(s) = \frac{b_1}{s + 1} + \frac{b_2}{(s + 1)^2} + \frac{b_3}{(s + 1)^3} \]$$
 
-Para encontrar \( b_1 \), \( b_2 \), y \( b_3 \), multiplicamos ambos lados por \( (s + 1)^3 \) y derivamos:
+Para encontrar $$\( b_1 \), \( b_2 \), y \( b_3 \)$$, multiplicamos ambos lados por $$\( (s + 1)^3 \)$$ y derivamos:
 
-\[ b_3 = \left[ (s + 1)^3 \frac{s^2 + 2s + 3}{(s + 1)^3} \right]_{s = -1} = 2 \]
+$$\[ b_3 = \left[ (s + 1)^3 \frac{s^2 + 2s + 3}{(s + 1)^3} \right]_{s = -1} = 2 \]$$
 
-\[ b_2 = \left[ \frac{d}{ds} \left( (s + 1)^3 \frac{s^2 + 2s + 3}{(s + 1)^3} \right) \right]_{s = -1} = 0 \]
+$$\[ b_2 = \left[ \frac{d}{ds} \left( (s + 1)^3 \frac{s^2 + 2s + 3}{(s + 1)^3} \right) \right]_{s = -1} = 0 \]$$
 
-\[ b_1 = \left[ \frac{1}{2} \frac{d^2}{ds^2} \left( (s + 1)^3 \frac{s^2 + 2s + 3}{(s + 1)^3} \right) \right]_{s = -1} = 1 \]
+$$\[ b_1 = \left[ \frac{1}{2} \frac{d^2}{ds^2} \left( (s + 1)^3 \frac{s^2 + 2s + 3}{(s + 1)^3} \right) \right]_{s = -1} = 1 \]$$
 
 Por lo tanto, la descomposición es:
 
-\[ F(s) = \frac{1}{s + 1} + \frac{0}{(s + 1)^2} + \frac{2}{(s + 1)^3} \]
+$$\[ F(s) = \frac{1}{s + 1} + \frac{0}{(s + 1)^2} + \frac{2}{(s + 1)^3} \]$$
 
 ### 3.3. Caso 3: Raíces Complejas Conjugadas
 
@@ -119,16 +119,3 @@ La descomposición en fracciones parciales será:
 Por lo tanto, la transformada inversa de Laplace será:
 
 \[ f(t) = 5e^{-t} \sin(2t) + 2e^{-t} \cos(2t) \]
-
-## 4. Aplicación en Matlab
-
-Matlab puede calcular las fracciones parciales de manera automática utilizando la función `residue`. Por ejemplo, para la función:
-
-\[ F(s) = \frac{s^2 - s - 3}{s(s - 1)(s + 3)} \]
-
-El código en Matlab sería:
-
-```matlab
-num = [1 -1 -3];
-den = conv([1 -1 0], [1 3]);
-[r, p, k] = residue(num, den);
