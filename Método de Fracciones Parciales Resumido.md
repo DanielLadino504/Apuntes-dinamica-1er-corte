@@ -106,16 +106,13 @@ $$\[ F(s) = \frac{1}{s + 1} + \frac{0}{(s + 1)^2} + \frac{2}{(s + 1)^3} \]$$
 
 Dada la función:
 
-\[ F(s) = \frac{2s + 12}{s^2 + 2s + 5} \]
+$$\[ F(s) = \frac{2s + 12}{s^2 + 2s + 5} \]$$
 
 Completamos el cuadrado en el denominador:
 
-\[ s^2 + 2s + 5 = (s + 1)^2 + 2^2 \]
+$$\[ s^2 + 2s + 5 = (s + 1)^2 + 2^2 \]$$
 
 La descomposición en fracciones parciales será:
 
-\[ F(s) = \frac{10 + 2(s + 1)}{(s + 1)^2 + 2^2} = 5 \frac{2}{(s + 1)^2 + 2^2} + 2 \frac{s + 1}{(s + 1)^2 + 2^2} \]
+$$\[ F(s) = \frac{10 + 2(s + 1)}{(s + 1)^2 + 2^2} = 5 \frac{2}{(s + 1)^2 + 2^2} + 2 \frac{s + 1}{(s + 1)^2 + 2^2} \]$$
 
-Por lo tanto, la transformada inversa de Laplace será:
-
-\[ f(t) = 5e^{-t} \sin(2t) + 2e^{-t} \cos(2t) \]
