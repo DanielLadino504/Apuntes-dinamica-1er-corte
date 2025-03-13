@@ -1,12 +1,11 @@
 # Fracciones Parciales: Método Resumido
 
 ## 1. Introducción
-
-El método de fracciones parciales es una técnica matemática utilizada para descomponer una función racional en una suma de fracciones más simples. Este método es especialmente útil en el análisis de sistemas dinámicos y en la solución de ecuaciones diferenciales, ya que permite simplificar la transformada inversa de Laplace, facilitando así la obtención de soluciones en el dominio del tiempo.
+El método de fracciones parciales es un metodo matemática utilizado para descomponer una función normalmente dificil de operar a una suma de fracciones más simples. Este método es especialmente útil en el análisis de sistemas dinámicos y en la solución de ecuaciones diferenciales, ya que permite simplificar la transformada inversa de Laplace, facilitandonos así la obtención de soluciones en el dominio del tiempo.
 
 ## 2. Definición
 
-Las fracciones parciales se aplican a funciones racionales de la forma:
+Las fracciones parciales se aplican a un tipo de funcione normalmente de la forma:
 
 \[ F(s) = \frac{A(s)}{B(s)} \]
 
