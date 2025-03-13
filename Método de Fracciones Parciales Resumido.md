@@ -142,7 +142,7 @@ descomponer \( F(s) \) en fracciones parciales
    
    $$b_3 = \left[ s^2 + 4s + 5 \right]_{s = -2} = (-2)^2 + 4(-2) + 5 = 4 - 8 + 5 = 1$$
 
-   -**Encontrar  $$\( b_2 \) $$**:
+- **Encontrar  $$\( b_2 \) $$**:
 
    Derivamos ambos lados con respecto a  $$\( s \) $$ y evaluamos en  $$\( s = -2 \)$$:
 
