@@ -13,7 +13,7 @@ donde $$\( A(s) \) y \( B(s) \)$$ son polinomios en el dominio de la frecuencia 
 
 ### 2.1. Casos Principales
 
-1. **Raíces reales diferentes**: $$Si \( B(s) \)$$ tiene raíces reales y distintas, la descomposición en fracciones parciales se tiene que hacer de la siguiente forma:
+2.1.1. **Raíces reales diferentes**: $$Si \( B(s) \)$$ tiene raíces reales y distintas, la descomposición en fracciones parciales se tiene que hacer de la siguiente forma:
 
    $$\[ F(s) = \frac{a_1}{s + p_1} + \frac{b_2}{s + p_2} + \cdots + \frac{b_n}{s + p_n} \]$$
 
@@ -28,7 +28,7 @@ donde $$\( A(s) \) y \( B(s) \)$$ son polinomios en el dominio de la frecuencia 
    - Después de hacer estos pasos, obtenemos los valores de $$\( b_1 \)$$ y $$\( b_2 \)$$, y obtenemos la suma de fracciones más simples:
    $$F(s) = \frac{b_1}{s + p_1} + \frac{b_2}{s + p_2}.$$
 
-2. **Raíces reales repetidas**: Si $$\( B(s) \)$$ tiene raíces reales repetidas, la descomposición incluirá términos con potencias crecientes en el denominador:
+2.1.2. **Raíces reales repetidas**: Si $$\( B(s) \)$$ tiene raíces reales repetidas, la descomposición incluirá términos con potencias crecientes en el denominador:
 
    $$\[ F(s) = \frac{b_1}{s + p} + \frac{b_2}{(s + p)^2} + \cdots + \frac{b_k}{(s + p)^k} \]$$
    
@@ -48,7 +48,7 @@ donde $$\( A(s) \) y \( B(s) \)$$ son polinomios en el dominio de la frecuencia 
    - Después de calcular $$\( b_1 \), \( b_2 \), y \( b_3 \)$$, lo reemplazamos en la fracciób original como la suma de fracciones más simples:
    $$F(s) = \frac{b_1}{s + p} + \frac{b_2}{(s + p)^2} + \frac{b_3}{(s + p)^3}$$
    
-3. **Raíces complejas conjugadas**: Si $$\( B(s) \)$$ tiene raíces complejas, la descomposición incluirá términos con funciones seno y coseno amortiguadas:
+2.1.3. **Raíces complejas conjugadas**: Si $$\( B(s) \)$$ tiene raíces complejas, la descomposición incluirá términos con funciones seno y coseno amortiguadas:
 
    $$\[ F(s) = \frac{As + B}{(s + \alpha)^2 + \omega^2} \]$$
 
@@ -116,3 +116,6 @@ La descomposición en fracciones parciales será:
 
 $$\[ F(s) = \frac{10 + 2(s + 1)}{(s + 1)^2 + 2^2} = 5 \frac{2}{(s + 1)^2 + 2^2} + 2 \frac{s + 1}{(s + 1)^2 + 2^2} \]$$
 
+## 3. Ejercicios
+
+### 3.1
